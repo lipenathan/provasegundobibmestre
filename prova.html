@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Estilos Musicais</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	<a href="#sec1">Vá para Apresentação</a>
+	<div class="container-fluid">
+		<div class="jumbotron" style="background-color:rgba(20,20,150,0.7); color:rgb(0,0,0); ">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 style="text-align: center">Estilos Favoritos</h1>
+				</div>
+			</div>
+		</div>
+			<!-- LOUVOR -->
+			<div class="row" style="background-color:rgba(127,255,212,0.4); color:rgb(0,0,0);border-radius: 30px ">
+				<div class="col-sm-4">
+					<h2 style="text-align: center;">Louvor</h2>
+					<p>São músicas de adoração cristã, com base em escrituras na Bíblia ou inspiração pessoal através do Espírito Santo</p>
+				</div>
+				<div class="col-sm-8">
+					<p>Ton Molinari</p>
+					<picture>
+					<img style="position:relative; box-sizing: inherit; width: 20%; border-radius: 25px;" src="foto1.jpg">
+					</picture>
+					<p>Som do Reino</p>
+					<picture>
+					<img style="position:relative; box-sizing: inherit; width: 30%; border-radius: 25px;" src="foto2.jpg">
+					</picture>
+					<p>Alessandro Vilas Boas </p>
+					<picture>
+					<img style="position:relative; box-sizing: inherit; width: 30%; border-radius: 25px;" src="foto3.jpg">
+					</picture>
+				</div>
+			</div>
+			<!-- RAP -->
+			<div class="row" style="background-color:rgba(190,190,190,0.8); color:rgb(0,0,0); ">
+				<div class="col-sm-4">
+					<h2 style="text-align: center">Rap/<br>Black</h2>
+					<p>
+						Músicas com rimas e que normalmente trazem alguma crítica ou levam a reflaxão
+					</p>
+				</div>
+				<div class="col-sm-8">
+					<p>Social Club</p>
+					<picture>
+					<img style="position:relative; box-sizing: inherit; width: 30%; border-radius: 25px;" src="foto4.jpg">
+					</picture>
+					<p>Whatuprg</p>
+					<picture>
+					<img style="position:relative; box-sizing: inherit; width: 30%; border-radius: 25px;" src="foto5.jpg">
+					</picture>
+					<p>Andy Mineo </p>
+					<picture>
+					<img style="position:relative; box-sizing: inherit; width: 30%; border-radius: 25px;" src="foto6.jpg">
+					</picture>
+				</div>
+			</div>
+			<!-- LO-FI -->
+			<div class="row" style="background-color:rgba(150,150,150,0.7); color:rgb(0,0,0); ">
+				<div class="col-sm-4">
+					<h2 style="text-align: center">Calmas/<br>Lo-fi</h2>
+					<p>
+						Músicas mais calmas e que trazem paz
+					</p>
+				</div>
+				<div class="col-sm-8">
+					<p>Montell Fish</p>
+					<picture>
+					<img style="position:relative; box-sizing: inherit; width: 20%; border-radius: 25px;" src="foto7.jpg">
+					</picture>
+					<p>Gungor</p>
+					<picture>
+					<img style="position:relative; box-sizing: inherit; width: 30%; border-radius: 25px;" src="foto8.jpg">
+					</picture>
+					<p>The Brilliance </p>
+					<picture>
+					<img style="position:relative; box-sizing: inherit; width: 30%; border-radius: 25px;" src="foto9.jpg">
+					</picture>
+				</div>
+			</div>
+			<!-- JS -->
+			<div class="row" style="background-color:rgba(150,20,20,0.7); color:rgb(0,0,0); ">
+				<div class="col-sm-4">
+					<h2 style="text-align: center">Agora digite seu nome e seu gosto musical</h2>
+				</div>
+				<div class="col-sm-8">
+					<input id="nome" type="charset" placeholder="nome"
+					oninput="peganome(this.value)">
+					<input id="estilom" type="charset" placeholder="Estilo Musical"
+					oninput="estilo(this.value)">
+				<p>Olá <span id="nomeus"></span> que gosta de <p><span id="estilo"></span></p></p>
+				</div>
+			</div>
+	</div>
+	<!-- Apresentação -->
+	<section id="sec1">
+			<div class="row" style="background-color:rgba(240,240,240,0.7); color:rgb(0,0,0); ">
+				<div class="col-sm-4">
+					<h2>Felipe Nathan dos Anjos</h2>
+					<picture>
+					<img style="position:relative; box-sizing: inherit; width: 30%; border-radius: 25px;" src="foto10.jpg">
+					</picture>
+					
+			</div>
+			<div class="col-sm-8">
+					<p>Cursando Análise e desenvolvimento de Sistemas na Universidade Unicesumar desde 2020<br>
+						Formado em Automação Industrial<br>
+						Trabalha na Empresa Jumper Soluções Eletromecânicas desde 2016<br>
+						E-mail: felipenatthan@gmail.com
+					</p>
+			</div>
+	</section>
+
+
+
+	<script type="text/javascript">
+		function peganome(nome){
+		document.getElementById('nomeus').innerHTML= nome;
+		}
+		function estilo(estilom){
+		document.getElementById('estilo').innerHTML= estilom;
+		}
+	</script>
+</body>
+</html>
